@@ -17,12 +17,12 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "rigolo"){
-        message.channe("TU ES MOCHE !");
+        message.channel.sendMessage("TU ES MOCHE !");
         console.log("Commande effectué");
     }
 
     if (message.content === prefix + "troprigolo"){
-        message.reply("JE T'AIME PAS !");
+        message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
 });
