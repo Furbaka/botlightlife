@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("*")
+var prefix = ("[")
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: !help");
+    bot.user.setGame(message.guild.memberCount);
     console.log("Connected");
 });
 
@@ -13,16 +13,16 @@ bot.login(process.env.TOKEN);
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n !burgerbot \n !fabriquant");
+        message.channel.sendMessage("Liste des commandes:\n [rigolo \n [troprigolo");
     }
 
-    if (message.content === prefix + "burgerbot"){
-        message.channe("Création du bot le _11/12/2017_ à _13h57_");
+    if (message.content === prefix + "rigolo"){
+        message.channe("TU ES MOCHE !");
         console.log("Commande effectué");
     }
 
-    if (message.content === prefix + "fabriquant"){
-        message.reply("_Ce bot a été crée par MhBurgerKing_");
+    if (message.content === prefix + "troprigolo"){
+        message.reply("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
 });
