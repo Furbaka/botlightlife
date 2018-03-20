@@ -43,5 +43,21 @@ bot.on('message', message => {
         message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
-
+    
+if (message.content === "do you know da wae"){
+        message.channel.sendMessage("Follow me ma brudda, I know da wae !");
+    }
+    
+if (message.content === "pizza"){
+        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    }
+    
+if (message.content === "burger"){
+        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    }
+    
+if (message.content === "pâtes"){
+        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    }
+    
 });
