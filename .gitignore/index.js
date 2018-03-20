@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var msg = message.content.toUpperCase();
+var msg = message.content.toUpperCase()
 var prefix = ("*")
 
 bot.on('ready', function() {
