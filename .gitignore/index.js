@@ -20,7 +20,7 @@ bot.on('message', message => {
             .addField("UTILES", "*info (pour voir les informations du serveurs) /n *avatar (pour avoir l'image de votre PP) /n *aide (bah... pour l'aide quoi.)")
             .setColor("0xF4D03F")
             .setFooter("BOT CRÉÉ PAR MISTIGRIX, qui a caché des easter eggs...")
-        message.channel.sendEmbed(embed);
+        message.channel.sendEmbed(embed2);
     }
 
     if (message.content === prefix + "rigolo"){
