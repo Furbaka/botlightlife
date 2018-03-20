@@ -41,14 +41,11 @@ bot.on('message', message => {
     if (message.content === prefix + "avatar") {
      // Send the user's avatar URL
         message.reply(message.author.avatarURL);
-  }
+    }
         
     if (message.content === prefix + "troprigolo"){
         message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
 
-bot.on('guildMemberAdd', member => {
-        var role = member.guild.roles.find('name', '⇝ 🎭 MEMBRE 🎭');
-        member.addRole(role)
 });
