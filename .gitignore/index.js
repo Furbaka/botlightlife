@@ -10,14 +10,14 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-client.on('guildMemberAdd', member => {
+//client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find('name', 'member-log');
+  //const channel = member.guild.channels.find('name', 'member-log');
   // Do nothing if the channel wasn't found on this server
-  if (!channel) return;
+  //if (!channel) return;
   // Send the message, mentioning the member
-  member.send(`Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj`);
-});
+  //member.send(`Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj`);
+//});
 
 bot.on('message', message => {
     if (message.content === prefix + "aide"){
