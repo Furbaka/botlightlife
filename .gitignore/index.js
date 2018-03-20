@@ -12,7 +12,7 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('guildMemberAdd', member => {
-   member.send("Merci d'avoir rejoint L↓GHT L↑FE");
+   member.send("Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj");
     }
 
 bot.on('message', message => {
