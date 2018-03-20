@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("¤")
+var prefix = ("*")
 
 bot.on('ready', function() {
     bot.user.setGame("guild.memberCount");
@@ -10,13 +10,14 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
+
 bot.on('message', message => {
-    if (message.content === prefix + "aide"){
+    if (message.content === prefix + "help"){
         var embed = new Discord.RichEmbed()
-            .setTitle("AIDE")
-            .setDescription("COMMANDES")
-            .addField("RIGOLO", "¤rigolo /n ¤troprigolo", true)
-            .addField("UTILES", "¤avatar (pour afficher votre avatar /n ¤aide (pour afficher toutes les commandes)", true)
+            .setTitle("INFO")
+            .setDescription("Information du serveur")
+            .addField("Nom", message.guild.name)
+            .addField("Membres", message.guild.memberCount)
             .setColor("0xF4D03F")
             .setFooter("BOT CRÉÉ PAR MISTIGRIX")
         message.channel.sendEmbed(embed);
@@ -44,9 +45,9 @@ bot.on('message', message => {
      // Send the user's avatar URL
         message.reply(message.author.avatarURL);
   }
-
+        
     if (message.content === prefix + "troprigolo"){
-        member.send("JE T'AIME PAS !");
+        message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
 });
