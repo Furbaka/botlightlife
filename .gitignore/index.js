@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var prefix = ("*")
+var prefix = ("[")
 
 bot.on('ready', function() {
     bot.user.setGame("message.guild.memberCount");
@@ -16,12 +16,19 @@ client.on('guildMemberAdd', member => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-  member.sendMessage(`Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj`);
+  member.send(`Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj`);
 });
 
 bot.on('message', message => {
-    if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n *rigolo \n *troprigolo");
+    if (message.content === prefix + "aide"){
+        var embed = new Discord.RichEmbed()
+            .setTitle("AIDE")
+            .setDescription("COMMANDES")
+            .addField("RIGOLO", "[rigolo /n [troprigolo", true)
+            .addField("UTILES", "[avatar (pour afficher votre avatar /n [aide (pour afficher toutes les commandes)")
+            .setColor("0xF4D03F")
+            .setFooter("BOT CRÉÉ PAR MISTIGRIX")
+        message.channel.sendEmbed(embed);
     }
 
     if (message.content === prefix + "rigolo"){
@@ -48,7 +55,7 @@ bot.on('message', message => {
   }
 
     if (message.content === prefix + "troprigolo"){
-        message.channel.sendMessage("JE T'AIME PAS !");
+        member.send("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
 });
