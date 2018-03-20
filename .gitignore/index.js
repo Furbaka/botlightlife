@@ -10,11 +10,12 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-
 bot.on('guildMemberAdd', member => {
-   member.sendMessage("Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/apjU2vb");
+   member.sendMessage("Merci d'avoir rejoint LIGHT LIFE !");
+    
     }
 
+       
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n *rigolo \n *troprigolo");
