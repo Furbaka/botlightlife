@@ -11,6 +11,10 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
 
+bot.on('guildMemberAdd', member => {
+   member.send("Welcome to the server!");
+});
+
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n *rigolo \n *troprigolo");
