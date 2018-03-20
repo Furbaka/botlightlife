@@ -60,4 +60,8 @@ if (message.content === "pâtes"){
         message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
     }
     
+if (message.content === "dab"){
+        message.channel.sendMessage("LE DAB NÉ PAS MORT");
+    }
+    
 });
