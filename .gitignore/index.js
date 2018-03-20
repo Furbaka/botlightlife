@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("*")
 
 bot.on('ready', function() {
-    bot.user.setGame("message.guild.memberCount");
+    bot.user.setGame(guild.memberCount);
     console.log("Connected");
 });
 
