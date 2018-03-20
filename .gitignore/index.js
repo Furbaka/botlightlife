@@ -26,9 +26,9 @@ bot.on('message', message => {
             .setTitle("INFO")
             .setDescription("Information du serveur")
             .addField("Nom", message.guild.name)
-            .addField("Membres", message.guild.memberscount)
+            .addField("Membres", message.guild.memberCount)
             .setColor("0xF4D03F")
-            .setFooter(" /n BOT CRÉÉ PAR MISTIGRIX")
+            .setFooter("BOT CRÉÉ PAR MISTIGRIX")
         message.channel.sendEmbed(embed);
     
 
