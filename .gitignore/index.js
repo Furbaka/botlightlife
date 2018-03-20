@@ -67,11 +67,11 @@ bot.on('message', message => {
         message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (message.content == "dab"){
+    if (message.content.split = "dab"){
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
-    if (message.content === "j'ai fais se bot"){
+    if (message.content == "j'ai fait ce bot"){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
 });
