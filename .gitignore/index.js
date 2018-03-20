@@ -52,7 +52,7 @@ if (message.content === "pizza"){
         message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
     }
     
-if (message.content === "burger"){
+if (message.input === "burger"){
         message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
     }
     
