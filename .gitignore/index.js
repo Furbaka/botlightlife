@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-var msg = message.content.toUpperCase()
 var prefix = ("*")
 
 bot.on('ready', function() {
@@ -52,27 +51,27 @@ bot.on('message', message => {
         console.log("Commande effectué");
     }
     
-    if (msg.includes('WAE')){
+    if (message.content === "do you know da wae ?"){
         message.channel.sendMessage("Follow me ma brudda, I know da wae !");
     }
     
-    if (msg.includes('PIZZA')){
+    if (message.content === "pizza"){
         message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (msg.includes('BURGER')){
+    if (message.content === "burger"){
         message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (msg.includes('PÂTES')){
+    if (message.content === "pâtes"){
         message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (msg.includes('DAB')){
+    if (message.content === "dab"){
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
-    if (msg.includes('BOT')){
+    if (message.content === "bot"){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
 });
