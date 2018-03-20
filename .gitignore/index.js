@@ -13,7 +13,14 @@ bot.login(process.env.TOKEN);
        
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n *rigolo \n *troprigolo");
+        var embed2 = new Discord.RichEmbed()
+            .setTitle("AIDE")
+            .setDescription("COMMANDES")
+            .addField("FUN", "*rigolo /n *rigolo")
+            .addField("UTILES", "*info (pour voir les informations du serveurs) /n *avatar (pour avoir l'image de votre PP) /n *aide (bah... pour l'aide quoi.)")
+            .setColor("0xF4D03F")
+            .setFooter("BOT CRÉÉ PAR MISTIGRIX, qui a caché des easter eggs...")
+        message.channel.sendEmbed(embed);
     }
 
     if (message.content === prefix + "rigolo"){
@@ -64,4 +71,7 @@ bot.on('message', message => {
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
+    if (message.content === "j'ai fais se bot"){
+        message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
+    }
 });
