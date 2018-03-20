@@ -71,7 +71,7 @@ bot.on('message', message => {
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
-    if (msg.includes("bot")){
+    if (msg.includes('BOT')){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
 });
