@@ -16,8 +16,8 @@ bot.on('message', message => {
         var embed2 = new Discord.RichEmbed()
             .setTitle("AIDE")
             .setDescription("COMMANDES")
-            .addField("FUN", "*rigolo /n *rigolo")
-            .addField("UTILES", "*info (pour voir les informations du serveurs) /n *avatar (pour avoir l'image de votre PP) /n *aide (bah... pour l'aide quoi.)")
+            .addField("FUN", "*rigolo | *rigolo")
+            .addField("UTILES", "*info (pour voir les informations du serveurs) | *avatar (pour avoir l'image de votre PP) | *aide (bah... pour l'aide quoi.)")
             .setColor("0xF4D03F")
             .setFooter("BOT CRÉÉ PAR MISTIGRIX, qui a caché des easter eggs...")
         message.channel.sendEmbed(embed2);
