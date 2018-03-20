@@ -16,7 +16,7 @@ bot.on('message', message => {
         var embed2 = new Discord.RichEmbed()
             .setTitle("AIDE")
             .setDescription("COMMANDES")
-            .addField("FUN", "*rigolo | *rigolo")
+            .addField("FUN", "*rigolo | *troprigolo")
             .addField("UTILES", "*info (pour voir les informations du serveurs) | *avatar (pour avoir votre PP) | *aide (bah... pour l'aide quoi.)")
             .setColor("0xF4D03F")
             .setFooter("BOT CRÉÉ PAR MISTIGRIX, qui a caché des easter eggs...")
@@ -51,27 +51,27 @@ bot.on('message', message => {
         console.log("Commande effectué");
     }
     
-    if (message.content == "do you know da wae"){
+    if (msg.includes("do you know da wae")){
         message.channel.sendMessage("Follow me ma brudda, I know da wae !");
     }
     
-    if (message.content == "pizza"){
-        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    if (msg.includes("pizza")){
+        message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (message.content == "burger"){
-        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    if (msg.includes("burger")){
+        message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (message.content == "pâtes"){
-        message.channel.sendMessage("arrêtez de parler de bouffe j'ai faim :/");
+    if (msg.includes("pâtes")){
+        message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (message.content.split = "dab"){
+    if (msg.includes("dab")){
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
-    if (message.content == "j'ai fait ce bot"){
+    if (msg.includes("bot")){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
 });
