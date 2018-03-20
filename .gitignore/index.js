@@ -47,4 +47,9 @@ bot.on('message', message => {
         message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
     }
+
+bot.on('guildMemberAdd', member => {
+        var role = member.guild.roles.find('name', '⇝ 🎭 MEMBRE 🎭');
+        member.addRole(role)
+    }
 });
