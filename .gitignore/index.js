@@ -21,16 +21,15 @@ bot.on('message', message => {
         console.log("Commande effectué");
     }
 
-    if (message.content === prefix + "support"){
+    if (message.content === prefix + "info"){
         var embed = new Discord.RichEmbed()
             .setTitle("SUPPORT")
             .setDescription("Page de support")
-            .addField("Problème", "Envoie **1a** à MhBurgerKing en message privée", true)
             .addField("Question", "Envoie **2b** en message privée", true)
-            .addField("Autre", "Envoie **3c** à MhBurgerKing en message privée", true)
+            .addField("Membres", "" + message.guild.memberCount , true)
             .setColor("0xF4D03F")
-            .addField("Apprend à coder un bot discord !", "Suivez les tuto de [PZH Codage](https://www.youtube.com/c/pzhcodage) sur sa chaîne youtube !", true)
-            .setFooter("La réponse de MhBurgerKing n'est pas immédiate, faites preuve de patience. :) Bon moment parmis la PZH's Community")
+            .addField("LIGHT LIFE BOT", "", true)
+            .setFooter("BOT CRÉÉ PAR MISTIGRIX")
         message.channel.sendEmbed(embed);
     
 
