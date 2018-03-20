@@ -23,9 +23,9 @@ bot.on('message', message => {
 
     if (message.content === prefix + "info"){
         var embed = new Discord.RichEmbed()
-            .setTitle("SUPPORT")
-            .setDescription("Page de support")
-            .addField("Question", "Envoie **2b** en message privée", true)
+            .setTitle("INFO")
+            .setDescription("Information du serveur")
+            .addField("Nom", "" + message.guild.name , true)
             .addField("Membres", "" + message.guild.memberCount , true)
             .setColor("0xF4D03F")
             .addField("LIGHT LIFE BOT", "", true)
