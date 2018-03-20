@@ -33,12 +33,10 @@ bot.on('message', message => {
     
 
     }
-    
-    client.on('message', message => {
-  // If the message is "what is my avatar"
-  if (message.content === prefix + "avatar") {
-    // Send the user's avatar URL
-    message.reply(message.author.avatarURL);
+
+    if (message.content === prefix + "avatar") {
+     // Send the user's avatar URL
+        message.reply(message.author.avatarURL);
   }
         
     if (message.content === prefix + "troprigolo"){
