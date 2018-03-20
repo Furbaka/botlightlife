@@ -25,8 +25,8 @@ bot.on('message', message => {
         var embed = new Discord.RichEmbed()
             .setTitle("INFO")
             .setDescription("Information du serveur")
-            .addField("Nom", message.guild.name , true)
-            .addField("Membres", message.guild.memberCount , true)
+            .addField("Nom", message.guild.name)
+            .addField("Membres", message.guild.membercount)
             .setColor("0xF4D03F")
             .addField("LIGHT LIFE BOT", "", true)
             .setFooter("BOT CRÉÉ PAR MISTIGRIX")
@@ -34,6 +34,7 @@ bot.on('message', message => {
     
 
     }
+    
     if (message.content === prefix + "troprigolo"){
         message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
