@@ -10,6 +10,14 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'member-log');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  member.sendMessage(`Merci d'avoir rejoint 👾 L↓GHT L↑FE 👾 https://discord.gg/dQ6X7gj`);
+});
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
@@ -38,7 +46,7 @@ bot.on('message', message => {
      // Send the user's avatar URL
         message.reply(message.author.avatarURL);
   }
-        
+
     if (message.content === prefix + "troprigolo"){
         message.channel.sendMessage("JE T'AIME PAS !");
         console.log("Commande effectué");
