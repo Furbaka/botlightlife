@@ -71,21 +71,7 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
-    if (message.content == "Creepy") {
+    if (message.content == prefix + "creepy") {
         message.channel.sendMessage("Elle se demande pourquoi elle a deux ombres. Après tout, il n'y a qu'une seule ampoule." || message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.");
     }
-
-    if (message.content.startsWith(prefix + "sondage")) {
-        let args = message.content.split(" ").slice(1);
-        let tingToEcho = args.join("")
-        var embed3 = new Discord.RichEmbed()
-            .setTitle("SONDAGE")
-            .setDescription("Sondage")
-            .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
-            .setColor("0xB40404")
-        message.channel.sendEmbed(embed3)
-        then(function (message) {
-            message.react("✔")
-            message.react("❌")
-        }).catch(function() {
-})}})
+});
