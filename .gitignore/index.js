@@ -86,7 +86,7 @@ if (message.content.startsWith(prefix + "sondage")) {
             message.react("❌")
         }).catch(function() {
         });
-        }else{}
+        }else{
             return message.reply("T'as pas le droit mon gars !")
     }
 });
