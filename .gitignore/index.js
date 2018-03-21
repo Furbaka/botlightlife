@@ -74,4 +74,8 @@ bot.on('message', message => {
     if (message.content === "bot"){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
+    
+if (message.content === "quelle heure il est" || message.content === "quelle heure il est ?") {
+        message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE");
+    }
 });
