@@ -73,20 +73,17 @@ if (message.content == "Quelle heure il est ?") {
     }
 
 if (message.content.startsWith(prefix + "sondage")) {
-    if (message.author.id == "328514801124900866" ){
+    if (message.author.is == "328514801124900866" ){
         let args = message.content.split(" ").slice(1);
         let tingToEcho = args.join(" ")
-        var embed = new Discord.RichEmbed()
+        var embed3 = new Discord.RichEmbed()
             .setDescription("Sondage")
             .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
             .setColor("0xB40404")
-        message.channel.sendEmbed(embed)
+        message.channel.sendEmbed(embed3)
         then(function (message) {
             message.react("✔")
             message.react("❌")
         }).catch(function() {
-        });
-        }else{
-            return message.reply("T'as pas le droit mon gars !")
     }
-});
+,)}}})
