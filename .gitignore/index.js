@@ -68,12 +68,11 @@ bot.on('message', message => {
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
     
-if (message.content == "Quelle heure il est ?") {
+    if (message.content == "Quelle heure il est ?") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
 
-if (message.content.startsWith(prefix + "sondage")) {
-    if (message.author.is == "328514801124900866" ){
+    if (message.content.startsWith(prefix + "sondage")) {
         let args = message.content.split(" ").slice(1);
         let tingToEcho = args.join(" ")
         var embed3 = new Discord.RichEmbed()
@@ -84,6 +83,5 @@ if (message.content.startsWith(prefix + "sondage")) {
         then(function (message) {
             message.react("✔")
             message.react("❌")
-        }).catch(function() {
-    }
-,)}}})
+        
+})}})
