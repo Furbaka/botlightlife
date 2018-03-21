@@ -12,6 +12,11 @@ bot.login(process.env.TOKEN);
 
        
 bot.on('message', message => {
+    
+    var sender = message.author;
+    var msg = message.content.toUpperCase();
+    var prefix = "*"
+    
     if (message.content === prefix + "aide"){
         var embed2 = new Discord.RichEmbed()
             .setTitle("AIDE")
@@ -67,7 +72,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
     
-if (message.content == "QUELLE HEURE IL EST") {
+if (message.content == "Quelle heure il est ?") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
 });
