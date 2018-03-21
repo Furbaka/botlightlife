@@ -76,11 +76,11 @@ if (message.content.startsWith(prefix + "sondage")) {
     if (message.author.id == "328514801124900866" ){
         let args = message.content.split(" ").slice(1);
         let tingToEcho = args.join(" ")
-        var embed3 = new Discord.RichEmbed()
+        var embed = new Discord.RichEmbed()
             .setDescription("Sondage")
             .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
             .setColor("0xB40404")
-        message.guild.channels.find("name", "sondage").sendEmbed(embed3)
+        message.channel.sendEmbed(embed)
         then(function (message) {
             message.react("✔")
             message.react("❌")
