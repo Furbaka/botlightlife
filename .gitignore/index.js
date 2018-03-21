@@ -74,7 +74,7 @@ bot.on('message', message => {
 
     if (message.content.startsWith(prefix + "sondage")) {
         let args = message.content.split(" ").slice(1);
-        let tingToEcho = args.join(" ")
+        let tingToEcho = args.join("")
         var embed3 = new Discord.RichEmbed()
             .setDescription("Sondage")
             .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
