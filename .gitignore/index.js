@@ -51,23 +51,23 @@ bot.on('message', message => {
         console.log("Commande effectué");
     }
     
-    if (message.content.startsWith === "DO YOU KNOW DA WAE"){
+    if (message.content == "DO YOU KNOW DA WAE"){
         message.channel.sendMessage("Follow me ma brudda, I know da wae !");
     }
 
-    if (message.content.endsWith === "PÂTES" || message.content.endsWith === "BURGER" || message.content.endsWith === "PIZZA"){
+    if (message.content == "PÂTES" || message.content == "BURGER" || message.content == "PIZZA"){
         message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
     }
     
-    if (message.content === "DAB"){
+    if (message.content == "DAB"){
         message.channel.sendMessage("LE DAB NÉ PAS MORT");
     }
 
-    if (message.content.startsWith === "BOT" || message.content.endsWith === "BOT"){
+    if (message.content == "BOT"){
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
     
-if (message.content.startsWith === "QUELLE HEURE IL EST") {
+if (message.content == "QUELLE HEURE IL EST") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
 });
