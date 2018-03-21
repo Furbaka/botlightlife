@@ -72,6 +72,6 @@ bot.on('message', message => {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
     if (message.content == prefix + "creepy") {
-        message.channel.sendMessage("Elle se demande pourquoi elle a deux ombres. Après tout, il n'y a qu'une seule ampoule." || message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.");
+        (message.channel.sendMessage("Elle se demande pourquoi elle a deux ombres. Après tout, il n'y a qu'une seule ampoule." || message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.")));
     }
 });
