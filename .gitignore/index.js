@@ -10,11 +10,8 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
-client.on('message', message => {
-    //...
-});
-
-client.on('ready', () => {
+bot.on('message', message => {
+bot.on('ready', () => {
     setTimeout(function(){ // in leftToEight() milliseconds run this:
         sendMessage(); // send the message once
         var dayMillseconds = 1000 * 60 * 60 * 24;
@@ -35,8 +32,8 @@ function sendMessage(){
         guild.channels.get('399310082275540992').send("Bonjour le monde !");
     }
 
-}
-       
+}       
+    
 bot.on('message', message => {
     
     if (message.content === prefix + "aide"){
