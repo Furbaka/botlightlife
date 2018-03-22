@@ -1,12 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-//Valeurs max et min (inclus)
-int max=2,min=1;
- 
-//Ton nombre aléatoire
-int nbAlea = (int)(Math.random()*(max-min))+min;
-
 var prefix = ("*")
 
 bot.on('ready', function() {
@@ -77,10 +71,14 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
-    if (message.content == prefix + "creepy") {
-        if nbAlea = 1
+    if (message.content == prefix + "creepy", nbAlea = 1) {
         message.channel.sendMessage("Elle se demande pourquoi elle a deux ombres. Après tout, il n'y a qu'une seule ampoule.");
-    else
-        message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace."):
+    } else {
+        message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.");
+    }
+
+    if (message.content == prefix + "creepy", nbAlea = 1) { 
+        int max=2,min=1;
+        int nbAlea = (int)(Math.random()*(max-min))+min;
     }
 });
