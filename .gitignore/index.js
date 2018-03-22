@@ -77,7 +77,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.");
     }
 
-    if (message.content == prefix + "creepy", nbAlea = 1) { 
+    if (message.content == prefix + "creepy") { 
         int max=2,min=1;
         int nbAlea = (int)(Math.random()*(max-min))+min;
     }
