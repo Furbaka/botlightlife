@@ -10,6 +10,32 @@ bot.on('ready', function() {
 
 bot.login(process.env.TOKEN);
 
+client.on('message', message => {
+    //...
+});
+
+client.on('ready', () => {
+    setTimeout(function(){ // in leftToEight() milliseconds run this:
+        sendMessage(); // send the message once
+        var dayMillseconds = 1000 * 60 * 60 * 24;
+        setInterval(function(){ // repeat this every 24 hours
+            sendMessage();
+        }, dayMillseconds)
+    }, leftToEight())
+})
+
+function leftToEight(){
+    var d = new Date();
+    return (-d + d.setHours(8,0,0,0));
+}
+
+function sendMessage(){
+    var guild = client.guilds.get('399272484815503361');
+    if(guild && guild.channels.get('399310082275540992')){
+        guild.channels.get('399310082275540992').send("Bonjour le monde !");
+    }
+
+}
        
 bot.on('message', message => {
     
@@ -71,4 +97,7 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ?" || message.content == "QUELLE HEURE IL EST ?" || message.content.startsWith == "il est quelle heure") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
+    if (message.content == "Quelle heure il est ?") {
+        message.guild.channels.find("name", "💥tout-pis-rien").send("Bonne nuit les petits :zzz:");
+    
 });
