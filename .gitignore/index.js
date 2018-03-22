@@ -8,9 +8,6 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.login(process.env.TOKEN);
-
-bot.on('message', message => {
 bot.on('ready', () => {
     setTimeout(function(){ // in leftToEight() milliseconds run this:
         sendMessage(); // send the message once
@@ -32,8 +29,10 @@ function sendMessage(){
         guild.channels.get('399310082275540992').send("Bonjour le monde !");
     }
 
-}       
-    
+};
+
+bot.login(process.env.TOKEN);
+   
 bot.on('message', message => {
     
     if (message.content === prefix + "aide"){
@@ -97,4 +96,4 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?") {
         message.guild.channels.find("name", "💥tout-pis-rien").send("Bonne nuit les petits :zzz:");
     
-});
+}});
