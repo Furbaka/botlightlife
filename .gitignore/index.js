@@ -68,18 +68,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
     
-    if (message.content == "Quelle heure il est ?") {
+    if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ? || message.content == "QUELLE HEURE IL EST ?" || message.content == "QUELLE HEURE IL EST" || message.content.startsWith == "il est quelle heure" ||) {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
-    }
-    if nbAlea = 1 {
-        message.channel.sendMessage("Elle se demande pourquoi elle a deux ombres. Après tout, il n'y a qu'une seule ampoule.");
-    }
-    if nbAlea = 2 {
-        message.channel.sendMessage("Mes étudiants m'aiment de tout leur cœur. J'aimerais juste qu'ils ne laissent pas de trace.");
-    }
-
-    if (message.content == prefix + "creepy") { 
-        int max=2,min=1;
-        int nbAlea = (int)(Math.random()*(max-min))+min;
     }
 });
