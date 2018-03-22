@@ -8,28 +8,6 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.on('ready', () => {
-    setTimeout(function(){ // in leftToEight() milliseconds run this:
-        sendMessage(); // send the message once
-        var dayMillseconds = 1000 * 60 * 60 * 24;
-        setInterval(function(){ // repeat this every 24 hours
-            sendMessage();
-        }, dayMillseconds)
-    }, leftToEight())
-})
-
-function leftToEight(){
-    var d = new Date();
-    return (-d + d.setHours(8,0,0,0));
-}
-
-function sendMessage(){
-    var guild = client.guilds.get('399272484815503361');
-    if(guild && guild.channels.get('399310082275540992')){
-        guild.channels.get('399310082275540992').send("Bonjour le monde !");
-    }
-
-};
 
 bot.login(process.env.TOKEN);
    
@@ -97,7 +75,6 @@ bot.on('message', message => {
         message.guild.channels.find("name", "💥tout-pis-rien").send("Bonne nuit les petits :zzz:");
 
     if (message.content == "WAW" || message.content == "wow" || message.content == "woaw" || message.content == "WOW" || message.content == "waw"){
-        message.channel.sendMessage("T'as vu, c'est dingue ${sent.author.username}")
-    }        
+        message.reply("T'as vu, c'est dingue !");
     
 }});
