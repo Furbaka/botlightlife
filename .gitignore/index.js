@@ -68,7 +68,7 @@ bot.on('message', message => {
         message.channel.sendMessage("Donc... je suis pas un vrai petit garcon ? :/");
     }
     
-    if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ? || message.content == "QUELLE HEURE IL EST ?" || message.content == "QUELLE HEURE IL EST" || message.content.startsWith == "il est quelle heure") {
+    if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ?" || message.content == "QUELLE HEURE IL EST ?" || message.content.startsWith == "il est quelle heure") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
 });
