@@ -77,4 +77,4 @@ bot.on('message', message => {
     if (message.content == "WAW" || message.content == "wow" || message.content == "woaw" || message.content == "WOW" || message.content == "waw"){
         message.reply("T'as vu, c'est dingue !");
     
-}});
+}}});
