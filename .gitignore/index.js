@@ -97,7 +97,7 @@ bot.on('message', message => {
         message.guild.channels.find("name", "💥tout-pis-rien").send("Bonne nuit les petits :zzz:");
 
     if (message.content == "WAW" || message.content == "wow" || message.content == "woaw" || message.content == "WOW" || message.content == "waw"){
-        message.channel.sendMessage(`T\'as vu, c'est dingue ${sent.author.username}`)
+        message.channel.sendMessage("T'as vu, c'est dingue ${sent.author.username}")
     }        
     
 }});
