@@ -8,7 +8,7 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.on('ready', () => {
+client.on('ready', () => {
     setTimeout(function(){ // in leftToEight() milliseconds run this:
         sendMessage(); // send the message once
         var dayMillseconds = 1000 * 60 * 60 * 24;
