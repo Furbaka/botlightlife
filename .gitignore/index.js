@@ -93,7 +93,11 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ?" || message.content == "QUELLE HEURE IL EST ?" || message.content.startsWith == "il est quelle heure") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
-    if (message.content == "Quelle heure il est ?") {
+    if (message.content == "zzz") {
         message.guild.channels.find("name", "💥tout-pis-rien").send("Bonne nuit les petits :zzz:");
+
+    if (message.content == "WAW" || message.content == "wow" || message.content == "woaw" || message.content == "WOW" || message.content == "waw"){
+        message.channel.sendMessage("T'as vu ${sent.author.username}, c'est dingue !");
+    }        
     
 }});
