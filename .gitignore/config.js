@@ -1,6 +1,6 @@
 {
-	"self_token": "",
-	"user_id": "",
+	"self_token": BOT_TOKEN,
+	"user_id": "424621186736062465",
 	"bot_name": "L↓GHT L↑FE",
 	"owner_name": "",
 	"prefix": "*",
