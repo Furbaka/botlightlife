@@ -11,10 +11,10 @@ module.exports = bot => bot.registerCommand('poll', (msg, args) => {
   if (title) {
     msg.channel.createMessage({
       embed: {
-        title: 'Poll',
+        title: 'Sondage',
         description: title,
         footer: {
-          text: 'Use 👍 or 👎 reactions to vote',
+          text: 'Utilise les réactions 👍 ou 👎',
         },
       },
     }).then((message) => {
@@ -24,14 +24,14 @@ module.exports = bot => bot.registerCommand('poll', (msg, args) => {
   } else {
     createTimedMessage(bot, msg.channel.id, {
       embed: {
-        title: 'Create a poll',
-        description: 'Provide a poll title',
+        title: 'Créer un titre',
+        description: 'Ajoute une description',
         color: bot.selfConfig.errorColor,
       },
     });
   }
 }, {
-  description: 'Creates polls',
+  description: 'Créer un sondage',
   fullDescription: 'Makes a poll with thumbs-up/down reactions',
   usage: '<title>',
 });
