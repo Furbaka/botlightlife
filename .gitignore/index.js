@@ -26,6 +26,7 @@ bot.on('message', message => {
         collector.on('end', collected => console.log(`Collected ${collected.size} items`));
     
     }
+       
     if (message.content === prefix + "aide"){
         var embed2 = new Discord.RichEmbed()
             .setTitle("AIDE")
