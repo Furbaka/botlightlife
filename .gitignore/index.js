@@ -52,12 +52,12 @@ bot.on('message', message => {
         console.log("Commande effectué");
     }
     
-    if (message.content.includes == "DO YOU KNOW DA WAE ?" || message.content == "do you know da wae ?" || message.content == "DO YOU KNOW DA WAE" || message.content == "do you know da wae" ){
+    if (message.content.includes == "DO YOU KNOW DA WAE ?" || message.content.includes == "do you know da wae ?" || message.content.includes == "DO YOU KNOW DA WAE" || message.content.includes == "do you know da wae" ){
         message.channel.sendMessage("Follow me ma brudda, I know da wae ! /n https://www.google.com/maps/place/Uganda/@1.3671051,30.058145,7z/data=!3m1!4b1!4m5!3m4!1s0x1771a69f6499f945:0x874155ce43014549!8m2!3d1.373333!4d32.290275");
     }
 
     if (message.content.includes == "pates" || message.content.includes == "burger" || message.content.includes == "pizza" ||  message.content.includes == "pâtes"){
-        message.channel.sendMessage("Arrêtez de parler de bouffe j'ai faim :/");
+        message.reply("Arrête de parler de bouffe j'ai faim :/");
     }
     
     if (message.content.includes == "DAB" || message.content.includes == "dab"){
@@ -71,7 +71,7 @@ bot.on('message', message => {
     if (message.content == "Quelle heure il est ?" || message.content == "quelle heure il est ?" || message.content == "Quelle heure il est " ||message.content == "quelle heure il est ?" || message.content == "QUELLE HEURE IL EST ?" || message.content.startsWith == "il est quelle heure") {
         message.channel.sendMessage("L'HEURE DE T'ACHETER UNE MONTRE !");
     }
-    if (message.content == "WAW" || message.content == "wow" || message.content == "woaw" || message.content == "WOW" || message.content == "waw"){
+    if (message.content.includes == "WAW" || message.content.includes == "wow" || message.content.includes == "woaw" || message.content.includes == "WOW" || message.content == "waw"){
         message.reply("T'as vu, c'est dingue !");
     }
 });
